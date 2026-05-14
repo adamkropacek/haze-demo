@@ -6,18 +6,21 @@
 <title>Zemědělská vrata na míru | Stájová, plachtová, rolovací | HAZE s.r.o.</title>
 <meta name="description" content="Zemědělská vrata na míru pro stáje, kravíny a statky. Tichý chod, izolace, konec průvanu. 25 let zkušeností, 200+ realizací, záruka 5 let. Nabídka do 48 hodin.">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://www.haze.cz/vrata-zemedelstvi/">
+<link rel="canonical" href="https://adamkropacek.github.io/haze-demo/lp-k1/">
 <meta property="og:title" content="Zemědělská vrata na míru | HAZE s.r.o.">
 <meta property="og:description" content="Stájová, plachtová, rolovací i svinovací vrata na míru. 25 let zkušeností, 200+ realizací, záruka 5 let.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="cs_CZ">
+<meta property="og:url" content="https://adamkropacek.github.io/haze-demo/lp-k1/">
+<meta property="og:image" content="https://adamkropacek.github.io/haze-demo/lp-k1/assets/hero.jpg">
+<link rel="preload" as="image" href="assets/hero.jpg">
 
 <!-- ============================================================
-     TRACKING — Consent Mode v2 default DENIED, granted via cookie banner.
+     TRACKING - Consent Mode v2 default DENIED, granted via cookie banner.
      gtag loads G-5V6W6CMFGR (GA4) + AW-11159013994 (Google Ads).
-     CONVERSION LABELS: conversion actions nejsou v Ads účtu vytvořené
-     (blokováno billing aktivací — viz setup_k1/campaign_blueprint.md).
-     Po vytvoření doplnit reálné labely za REPLACE_*_LABEL níže.
+     CONVERSION LABELS: conversion actions nejsou v Ads uctu vytvorene
+     (blokovano billing aktivaci - viz setup_k1/campaign_blueprint.md).
+     Po vytvoreni doplnit realne labely za REPLACE_*_LABEL nize.
      ============================================================ -->
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -35,20 +38,20 @@
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5V6W6CMFGR"></script>
 
-<!-- Schema.org — fixuje audit S-03 (chybějící JSON-LD) -->
+<!-- Schema.org - fixuje audit S-03 (chybejici JSON-LD) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "HAZE, s.r.o.",
-  "description": "Výroba a montáž zemědělských vrat na míru — stájová, plachtová, rolovací a svinovací vrata pro stáje, kravíny a statky.",
+  "description": "Vyroba a montaz zemedelskych vrat na miru - stajova, plachtova, rolovaci a svinovaci vrata pro staje, kraviny a statky.",
   "url": "https://www.haze.cz/",
   "telephone": "+420602488989",
   "email": "info@haze.cz",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Křičeň 108",
-    "addressLocality": "Křičeň",
+    "streetAddress": "Kricen 108",
+    "addressLocality": "Kricen",
     "postalCode": "533 41",
     "addressCountry": "CZ"
   },
@@ -94,27 +97,34 @@
   .hphone .num{color:#fff;font-weight:800;font-size:21px;white-space:nowrap}
   .hphone:hover .num{color:var(--haze)}
 
-  /* ---------- HERO (form above the fold) ---------- */
-  .hero{background:var(--steel-900);color:#fff;
-    background-image:linear-gradient(180deg,#1c1d1f 0%,#26282b 100%)}
+  /* ---------- HERO (real photo bg + form above the fold) ---------- */
+  .hero{
+    position:relative;color:#fff;
+    background:
+      linear-gradient(180deg,rgba(20,21,23,.78) 0%,rgba(20,21,23,.86) 100%),
+      url(assets/hero.jpg) center 42%/cover no-repeat;
+    background-color:var(--steel-900);
+  }
   .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;
-    padding:54px 0 60px;align-items:start}
+    padding:58px 0 64px;align-items:start}
   .eyebrow{display:inline-block;background:var(--haze);color:#fff;
     font-weight:800;font-size:12px;letter-spacing:.1em;padding:6px 12px;
     border-radius:3px;margin-bottom:18px;text-transform:uppercase}
-  h1{font-size:46px;line-height:1.12;font-weight:800;letter-spacing:-.01em}
-  .hero-sub{font-size:19px;color:var(--steel-200);margin-top:18px;
-    max-width:520px}
-  .trust-bar{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px}
-  .trust-bar li{list-style:none;font-weight:700;font-size:15px;
-    color:#fff;display:flex;align-items:center;gap:8px}
+  h1{font-size:46px;line-height:1.12;font-weight:800;letter-spacing:-.01em;
+    text-shadow:0 2px 18px rgba(0,0,0,.45)}
+  .hero-sub{font-size:19px;color:#e7e5df;margin-top:18px;max-width:520px;
+    text-shadow:0 1px 10px rgba(0,0,0,.5)}
+  .trust-bar{display:flex;flex-wrap:wrap;gap:10px 12px;margin-top:28px}
+  .trust-bar li{list-style:none;font-weight:700;font-size:14px;color:#fff;
+    display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);padding:8px 13px;border-radius:4px;
+    backdrop-filter:blur(2px)}
   .trust-bar li::before{content:"";width:9px;height:9px;background:var(--haze);
-    border-radius:2px;display:inline-block}
-  .hero-photo-note{margin-top:26px;font-size:13px;color:#71747a}
+    border-radius:2px;display:inline-block;flex:none}
 
   /* ---------- FORM CARD ---------- */
   .formcard{background:var(--paper);color:var(--ink);border-radius:6px;
-    padding:26px 26px 22px;box-shadow:0 18px 50px rgba(0,0,0,.35);
+    padding:26px 26px 22px;box-shadow:0 22px 60px rgba(0,0,0,.5);
     border-top:5px solid var(--haze)}
   .formcard h2{font-size:22px;font-weight:800;line-height:1.2}
   .formcard .fc-sub{font-size:14px;color:var(--ink-soft);margin:6px 0 18px}
@@ -142,23 +152,38 @@
   .form-ok strong{color:var(--ok);font-size:18px}
 
   /* ---------- SECTIONS ---------- */
-  section{padding:60px 0}
-  .sec-head{max-width:680px;margin-bottom:36px}
+  section{padding:62px 0}
+  .sec-head{max-width:680px;margin-bottom:34px}
   .sec-head .eyebrow2{color:var(--haze-dark);font-weight:800;font-size:13px;
     letter-spacing:.08em;text-transform:uppercase}
   .sec-head h2{font-size:34px;font-weight:800;line-height:1.15;margin-top:8px}
   .sec-head p{font-size:17px;color:var(--ink-soft);margin-top:10px}
 
-  /* products */
+  /* products - real photos */
   .prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
   .prod{background:#fff;border:1px solid var(--line);border-radius:6px;
     overflow:hidden;display:flex;flex-direction:column}
-  .prod-img{background:var(--paper-2);aspect-ratio:4/3;display:flex;
-    align-items:center;justify-content:center;color:#a8a499;font-size:12px;
-    font-weight:700;text-align:center;padding:14px;border-bottom:1px solid var(--line)}
+  .prod-img{aspect-ratio:4/3;width:100%;object-fit:cover;
+    border-bottom:1px solid var(--line);background:var(--paper-2)}
   .prod-body{padding:16px 16px 18px}
   .prod-body h3{font-size:18px;font-weight:800}
   .prod-body p{font-size:14px;color:var(--ink-soft);margin-top:6px}
+
+  /* showcase strip - one wide real photo between products + why */
+  .showcase{position:relative;background:var(--steel-900)}
+  .showcase img{width:100%;height:340px;object-fit:cover;object-position:center 60%;
+    display:block;opacity:.92}
+  .showcase .scap{position:absolute;left:0;right:0;bottom:0;
+    background:linear-gradient(0deg,rgba(15,16,17,.92),rgba(15,16,17,0));
+    color:#fff;padding:40px 0 22px}
+  .showcase .scap .wrap{display:flex;align-items:flex-end;
+    justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .showcase .scap strong{font-size:22px;font-weight:800;display:block}
+  .showcase .scap span{font-size:15px;color:var(--steel-200)}
+  .showcase .scap a{background:var(--haze);color:#fff;text-decoration:none;
+    font-weight:800;font-size:15px;padding:12px 22px;border-radius:4px;
+    white-space:nowrap}
+  .showcase .scap a:hover{background:var(--haze-dark)}
 
   /* why */
   .why{background:var(--steel-900);color:#fff}
@@ -178,13 +203,16 @@
   .step h3{font-size:17px;font-weight:800}
   .step p{font-size:14px;color:var(--ink-soft);margin-top:5px}
 
-  /* references */
+  /* references - real photos with caption */
   .ref{background:var(--paper-2)}
   .ref-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
-  .ref-img{background:#ddd9cf;aspect-ratio:3/2;border-radius:6px;
-    display:flex;align-items:center;justify-content:center;color:#a8a499;
-    font-size:12px;font-weight:700;text-align:center;padding:16px;
-    border:1px solid var(--line)}
+  .ref-fig{background:#fff;border:1px solid var(--line);border-radius:6px;
+    overflow:hidden}
+  .ref-fig img{aspect-ratio:3/2;width:100%;object-fit:cover;background:#ddd9cf}
+  .ref-fig figcaption{padding:11px 14px;font-size:13px;font-weight:700;
+    color:var(--ink);display:flex;align-items:center;gap:8px}
+  .ref-fig figcaption::before{content:"";width:8px;height:8px;flex:none;
+    background:var(--haze);border-radius:2px}
 
   /* final CTA */
   .cta{background:var(--haze);color:#fff;text-align:center}
@@ -197,7 +225,7 @@
   .cta-primary{background:#fff;color:var(--haze-dark)}
   .cta-secondary{background:var(--steel-900);color:#fff}
 
-  /* footer — fixuje audit G-02 (povinné identifikační údaje) */
+  /* footer - fixuje audit G-02 (povinne identifikacni udaje) */
   footer{background:var(--steel-900);color:var(--steel-200);font-size:13px;
     padding:40px 0}
   footer .fcols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
@@ -207,7 +235,7 @@
   footer .legal{margin-top:26px;padding-top:16px;border-top:1px solid #3a3d41;
     color:#83868b;line-height:1.7}
 
-  /* cookie banner — fixuje audit G-01 */
+  /* cookie banner - fixuje audit G-01 */
   .cookie{position:fixed;bottom:0;left:0;right:0;z-index:90;
     background:var(--steel-800);color:#fff;padding:16px 20px;
     box-shadow:0 -8px 30px rgba(0,0,0,.3)}
@@ -222,7 +250,7 @@
 
   /* ---------- RESPONSIVE ---------- */
   @media(max-width:900px){
-    .hero-grid{grid-template-columns:1fr;gap:32px;padding:36px 0 44px}
+    .hero-grid{grid-template-columns:1fr;gap:30px;padding:40px 0 46px}
     h1{font-size:34px}
     .prod-grid{grid-template-columns:repeat(2,1fr)}
     .why-grid{grid-template-columns:1fr 1fr}
@@ -230,15 +258,18 @@
     .ref-grid{grid-template-columns:1fr 1fr}
     footer .fcols{grid-template-columns:1fr}
     .sec-head h2{font-size:27px}
+    .showcase img{height:260px}
   }
   @media(max-width:560px){
-    .hbar{padding:10px 16px}
+    .hbar{padding:11px 14px;gap:10px}
     .logo{font-size:20px}
+    .logo small{display:none}
     .hphone .lbl{display:none}
     .hphone .num{font-size:18px}
     .prod-grid,.why-grid,.steps,.ref-grid{grid-template-columns:1fr}
     h1{font-size:29px}
-    section{padding:44px 0}
+    section{padding:46px 0}
+    .showcase .scap .wrap{flex-direction:column;align-items:flex-start}
   }
 </style>
 </head>
@@ -271,10 +302,9 @@
           <li>Záruka 5 let</li>
           <li>Montáž v ČR a SR</li>
         </ul>
-        <p class="hero-photo-note">[ FOTO: doplnit reálnou fotku stáje s vraty HAZE - hero vizuál ]</p>
       </div>
 
-      <!-- FORM — above the fold -->
+      <!-- FORM - above the fold -->
       <div class="formcard">
         <h2>Nezávazná poptávka</h2>
         <p class="fc-sub">Cenová nabídka do 48 hodin. Konzultace zdarma.</p>
@@ -337,28 +367,28 @@
     </div>
     <div class="prod-grid">
       <div class="prod">
-        <div class="prod-img">[ FOTO: stájová vrata - realizace ]</div>
+        <img class="prod-img" src="assets/prod-stajova.jpg" alt="Stájová vrata HAZE na zemědělské hale" loading="lazy" width="760" height="570">
         <div class="prod-body">
           <h3>Stájová vrata</h3>
           <p>Vrata pro stáj a kravín. Tichý chod, bez průvanu, welfare pro chov skotu i prasat.</p>
         </div>
       </div>
       <div class="prod">
-        <div class="prod-img">[ FOTO: plachtová vrata - realizace ]</div>
+        <img class="prod-img" src="assets/prod-plachtova.jpg" alt="Plachtová vrata HAZE - realizace ve stáji" loading="lazy" width="760" height="570">
         <div class="prod-body">
           <h3>Plachtová vrata</h3>
           <p>Pro stáje, sklady i přístřešky. Plachta odolná UV i mrazu, lehká obsluha.</p>
         </div>
       </div>
       <div class="prod">
-        <div class="prod-img">[ FOTO: rolety do stáje - realizace ]</div>
+        <img class="prod-img" src="assets/prod-rolety.jpg" alt="Rolovací vrata HAZE do stáje - realizace" loading="lazy" width="760" height="570">
         <div class="prod-body">
           <h3>Rolety do stáje</h3>
           <p>Rolovací vrata pro stáj. Izolace a tichý chod, jednoduché ovládání.</p>
         </div>
       </div>
       <div class="prod">
-        <div class="prod-img">[ FOTO: svinovací vrata - realizace ]</div>
+        <img class="prod-img" src="assets/prod-svinovaci.jpg" alt="Svinovací vrata HAZE - realizace v zemědělském provozu" loading="lazy" width="760" height="570">
         <div class="prod-body">
           <h3>Svinovací vrata</h3>
           <p>Pro stáje, přístřešky i sklady. Úspora místa, robustní konstrukce.</p>
@@ -367,6 +397,20 @@
     </div>
   </div>
 </section>
+
+<!-- ===================== SHOWCASE STRIP ===================== -->
+<div class="showcase">
+  <img src="assets/ref-4.jpg" alt="Zemědělská hala s vraty a větráním HAZE" loading="lazy" width="900" height="600">
+  <div class="scap">
+    <div class="wrap">
+      <div>
+        <strong>Vyrábíme i montujeme</strong>
+        <span>Za výsledek ručíme my - ne subdodavatel.</span>
+      </div>
+      <a href="#leadForm">Chci cenovou nabídku</a>
+    </div>
+  </div>
+</div>
 
 <!-- ===================== PROČ HAZE ===================== -->
 <section class="why">
@@ -443,18 +487,36 @@
     <div class="sec-head">
       <div class="eyebrow2">Reference</div>
       <h2>200+ realizací ve stájích a zemědělských provozech</h2>
-      <p>Vrata HAZE slouží v družstvech a na farmách po celé ČR i na Slovensku.</p>
+      <p>Vrata a větrací systémy HAZE slouží v družstvech a na farmách po celé ČR i na Slovensku.</p>
     </div>
-    <!-- FOTO: doplnit 6 reálných fotek realizací od Dominika.
-         POZOR: nevymýšlet jména družstev / lokality / rozměry -
-         použít jen reálné popisky dodané klientem. -->
+    <!-- Foto: realne realizace z HAZE_Katalog_CZ_2025.pdf. Popisky = typ systemu
+         viditelny na fotce + lokalita uvedena v katalogu klienta (Okrouhla Radoun,
+         Osicky). Zadne vymyslene druzstvo/rozmer. -->
     <div class="ref-grid">
-      <div class="ref-img">[ FOTO: realizace 1 ]</div>
-      <div class="ref-img">[ FOTO: realizace 2 ]</div>
-      <div class="ref-img">[ FOTO: realizace 3 ]</div>
-      <div class="ref-img">[ FOTO: realizace 4 ]</div>
-      <div class="ref-img">[ FOTO: realizace 5 ]</div>
-      <div class="ref-img">[ FOTO: realizace 6 ]</div>
+      <figure class="ref-fig">
+        <img src="assets/ref-1.jpg" alt="Boční ventilace stáje - realizace HAZE" loading="lazy" width="900" height="600">
+        <figcaption>Boční ventilace stáje</figcaption>
+      </figure>
+      <figure class="ref-fig">
+        <img src="assets/ref-2.jpg" alt="Boční ventilační systém stáje - Okrouhlá Radouň" loading="lazy" width="900" height="600">
+        <figcaption>Boční ventilace - Okrouhlá Radouň</figcaption>
+      </figure>
+      <figure class="ref-fig">
+        <img src="assets/ref-3.jpg" alt="Boční ventilační systém typu F - realizace HAZE" loading="lazy" width="900" height="600">
+        <figcaption>Boční ventilace s polykarbonátem</figcaption>
+      </figure>
+      <figure class="ref-fig">
+        <img src="assets/ref-6.jpg" alt="Hřebenová větrací štěrbina stáje - Osičky" loading="lazy" width="900" height="600">
+        <figcaption>Hřebenová štěrbina - Osičky</figcaption>
+      </figure>
+      <figure class="ref-fig">
+        <img src="assets/ref-5.jpg" alt="Posuvná vrata zemědělské stáje - realizace HAZE" loading="lazy" width="900" height="600">
+        <figcaption>Posuvná vrata stáje</figcaption>
+      </figure>
+      <figure class="ref-fig">
+        <img src="assets/prod-rolety.jpg" alt="Rolovací vrata zemědělské haly - realizace HAZE" loading="lazy" width="760" height="570">
+        <figcaption>Rolovací vrata haly</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -514,7 +576,7 @@
 
 <script>
 /* ============================================================
-   1) GCLID + UTM capture — z URL do hidden fields + localStorage
+   1) GCLID + UTM capture - z URL do hidden fields + localStorage
    ============================================================ */
 (function(){
   var qs = new URLSearchParams(location.search);
@@ -529,7 +591,7 @@
 })();
 
 /* ============================================================
-   2) COOKIE CONSENT — Consent Mode v2 update
+   2) COOKIE CONSENT - Consent Mode v2 update
    ============================================================ */
 (function(){
   var bar = document.getElementById('cookieBar');
@@ -557,14 +619,14 @@
 })();
 
 /* ============================================================
-   3) PHONE / EMAIL CLICK — conversion events
-      (na haze.cz Webnode tyto eventy NEšly bez Premium+;
-       na téhle LP fungují nativně)
+   3) PHONE / EMAIL CLICK - conversion events
+      (na haze.cz Webnode tyto eventy NEslo bez Premium+;
+       na tehle LP funguji nativne)
    ============================================================ */
 document.querySelectorAll('[data-track="phone"]').forEach(function(el){
   el.addEventListener('click',function(){
     gtag('event','phone_click',{send_to:'G-5V6W6CMFGR'});
-    /* TODO po vytvoření conversion action: */
+    /* TODO po vytvoreni conversion action (blokovano billing aktivaci): */
     /* gtag('event','conversion',{send_to:'AW-11159013994/REPLACE_PHONE_LABEL'}); */
   });
 });
@@ -577,14 +639,44 @@ document.querySelectorAll('[data-track="email"]').forEach(function(el){
 
 /* ============================================================
    4) FORM SUBMIT
-      ENDPOINT: doplnit reálný handler (Formspree / vlastní /api).
-      Bez endpointu formulář stále validuje, vyšle conversion event
-      a zobrazí poděkování — takže je testovatelný hned.
+      FORM_ENDPOINT: az bude Formspree (nebo vlastni /api) handler,
+      vlozit jeho URL nize - prevezme rizeni odeslani.
+      Bez endpointu formular NEztratí lead: otevre predvyplneny
+      e-mail na info@haze.cz (mailto fallback) + vystreli conversion
+      event + zobrazi podekovani. Funguje od prvniho dne nasazeni.
    ============================================================ */
 (function(){
-  var FORM_ENDPOINT = ''; /* <-- DOPLNIT: napr. https://formspree.io/f/xxxx */
+  var FORM_ENDPOINT = ''; /* <-- DOPLNIT az bude Formspree form ID: https://formspree.io/f/xxxx */
+  var LEAD_EMAIL = 'info@haze.cz';
   var form = document.getElementById('leadForm');
   var okBox = document.getElementById('formOk');
+
+  function fireConversion(){
+    gtag('event','generate_lead',{send_to:'G-5V6W6CMFGR'});
+    /* TODO po vytvoreni conversion action (blokovano billing aktivaci): */
+    /* gtag('event','conversion',{send_to:'AW-11159013994/REPLACE_FORM_LABEL'}); */
+  }
+  function showThanks(){
+    form.style.display='none';
+    okBox.style.display='block';
+    okBox.scrollIntoView({behavior:'smooth',block:'center'});
+  }
+  function mailtoFallback(){
+    var b =
+      'Jmeno a firma: ' + form.name.value.trim() + '\n' +
+      'Telefon: ' + form.phone.value.trim() + '\n' +
+      'E-mail: ' + form.email.value.trim() + '\n' +
+      'Typ vrat: ' + (form.gate_type.value || 'neuvedeno') + '\n' +
+      'Zprava: ' + (form.message.value.trim() || '-') + '\n' +
+      '---\n' +
+      'gclid: ' + (form.gclid.value || '-') + '\n' +
+      'kampan: ' + (form.utm_campaign.value || '-') + ' / ' +
+        (form.utm_content.value || '-') + ' / ' + (form.utm_term.value || '-');
+    var href = 'mailto:' + LEAD_EMAIL +
+      '?subject=' + encodeURIComponent('Poptavka z webu - zemedelska vrata') +
+      '&body=' + encodeURIComponent(b);
+    window.location.href = href;
+  }
 
   form.addEventListener('submit',function(e){
     e.preventDefault();
@@ -600,23 +692,19 @@ document.querySelectorAll('[data-track="email"]').forEach(function(el){
       return;
     }
 
-    function done(){
-      gtag('event','generate_lead',{send_to:'G-5V6W6CMFGR'});
-      /* TODO po vytvoření conversion action: */
-      /* gtag('event','conversion',{send_to:'AW-11159013994/REPLACE_FORM_LABEL'}); */
-      form.style.display='none';
-      okBox.style.display='block';
-      okBox.scrollIntoView({behavior:'smooth',block:'center'});
-    }
-
     if(FORM_ENDPOINT){
       var data = new FormData(form);
       fetch(FORM_ENDPOINT,{method:'POST',body:data,headers:{'Accept':'application/json'}})
-        .then(function(r){ done(); })
-        .catch(function(){ alert('Odeslání selhalo, zkuste prosím zavolat: +420 602 488 989'); });
+        .then(function(r){ fireConversion(); showThanks(); })
+        .catch(function(){
+          /* sit selhala - lead nesmi propadnout */
+          fireConversion(); mailtoFallback(); showThanks();
+        });
     } else {
-      /* endpoint zatím nenastaven — event + poděkování proběhne pro testování */
-      done();
+      /* endpoint zatim nenastaven - mailto fallback dorucuje lead realne */
+      fireConversion();
+      mailtoFallback();
+      showThanks();
     }
   });
 })();
