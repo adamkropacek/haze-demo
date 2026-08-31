@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta name="robots" content="noindex,nofollow"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fördermittel und Projekte | HAZE</title>
+<meta name="description" content="Übersicht der Projekte von HAZE s.r.o., die aus Fonds der Europäischen Union und aus dem Staatshaushalt der Tschechischen Republik gefördert wurden.">
+<link rel="canonical" href="https://adamkropacek.github.io/haze-demo/de/foerderungen-und-projekte/">
+<meta property="og:title" content="Fördermittel und Projekte - HAZE">
+<meta property="og:description" content="Projekte, gefördert aus EU-Fonds und aus dem Staatshaushalt der Tschechischen Republik.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://adamkropacek.github.io/haze-demo/de/foerderungen-und-projekte/">
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent','default',{
+    'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied',
+    'analytics_storage':'denied','wait_for_update':500
+  });
+  gtag('set','ads_data_redaction',true);
+  // Návrat po přijetí cookies: souhlas uděluje až scripts.js na konci body,
+  // takže bez tohohle řádku je každý další pohled měřen jako denied.
+  try{if(localStorage.getItem('haze-cookies')==='accepted')gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}catch(e){}
+  gtag('js', new Date());
+  gtag('config','G-5V6W6CMFGR');
+  gtag('config','AW-11159013994');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5V6W6CMFGR"></script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5KJSMWSP');</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/haze-demo/assets/styles.css?v=20260814">
+<link rel="icon" type="image/png" sizes="32x32" href="/haze-demo/assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/haze-demo/assets/favicon-180.png">
+<meta name="theme-color" content="#F79430">
+<style>
+/* Funding page specific */
+.eu-grid{display:flex;flex-direction:column;gap:36px;max-width:880px;margin:0 auto}
+.eu-project{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--haze);
+  border-radius:4px;padding:36px 40px;display:flex;flex-direction:column;gap:18px}
+.eu-project-emblems{display:flex;align-items:center;gap:24px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.eu-lockup,.mpo-lockup,.tcf-lockup{display:flex;align-items:center;gap:11px}
+.eu-lockup img{height:40px;width:60px;flex:none;display:block;border-radius:1px}
+.mpo-lockup img{height:40px;width:40px;flex:none;display:block}
+/* Logo uz obsahuje nazev programu, proto bez textoveho popisku. */
+.tcf-lockup img{height:40px;width:110px;flex:none;display:block}
+.eu-cap{font-size:11px;line-height:1.32;color:var(--ink-soft);font-weight:600;max-width:210px}
+.eu-cap strong{display:block;color:var(--ink);font-weight:700;font-size:12px;letter-spacing:.01em;margin-bottom:1px}
+.mpo-cap{font-size:10.5px;line-height:1.28;color:var(--ink);font-weight:700;letter-spacing:.03em;text-transform:uppercase;max-width:130px}
+.eu-project h2{font-family:'Manrope',sans-serif;font-weight:700;font-size:22px;color:var(--ink);line-height:1.25;letter-spacing:-.005em}
+.eu-project h2 em{font-style:italic;color:var(--haze-dark);font-weight:700}
+.eu-project p{font-size:15px;color:var(--ink-soft);line-height:1.65}
+.eu-project p strong{color:var(--ink);font-weight:700}
+.eu-project dl{display:grid;grid-template-columns:160px 1fr;gap:8px 18px;padding:14px 0;border-top:1px dashed var(--line);font-size:14.5px}
+.eu-project dt{color:var(--ink-soft);font-weight:600;letter-spacing:.02em}
+.eu-project dd{color:var(--ink)}
+.eu-project dd code{font-family:'Inter',monospace;font-size:13.5px;background:var(--paper-2);padding:2px 6px;border-radius:3px}
+.eu-project .funding-line{font-size:13.5px;color:var(--ink-soft);font-style:italic;padding-top:10px;border-top:1px dashed var(--line);margin-top:4px;line-height:1.55}
+.eu-project a.read-more{color:var(--haze-dark);font-weight:700;text-decoration:underline}
+.eu-project a.read-more:hover{color:var(--haze)}
+@media (max-width:680px){
+  .eu-project{padding:26px 22px}
+  .eu-project dl{grid-template-columns:1fr;gap:4px}
+  .eu-project dt{font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;padding-top:8px}
+}
+</style>
+<link rel="alternate" hreflang="cs" href="https://adamkropacek.github.io/haze-demo/dotace/"><link rel="alternate" hreflang="en" href="https://adamkropacek.github.io/haze-demo/en/subsidies-and-projects/"><link rel="alternate" hreflang="de" href="https://adamkropacek.github.io/haze-demo/de/foerderungen-und-projekte/"><link rel="alternate" hreflang="x-default" href="https://adamkropacek.github.io/haze-demo/dotace/"></head>
+<body>
+
+<a href="#main" class="skip-link">Zum Inhalt springen</a>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KJSMWSP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<header id="hdr" class="solid">
+  <div class="hbar">
+    <a href="/haze-demo/de/" class="logo">
+      <img src="/haze-demo/assets/logo-white.svg" alt="HAZE" class="logo-img" width="118" height="55" decoding="async">
+    </a>
+    <div class="lang-switch" role="navigation" aria-label="Sprachauswahl"><a href="/haze-demo/dotace/" hreflang="cs" lang="cs" title="Tschechisch"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false"><rect width="30" height="10" fill="#ffffff"></rect><rect y="10" width="30" height="10" fill="#d7141a"></rect><path d="M0 0 15 10 0 20Z" fill="#11457e"></path></svg><span class="lang-code">CS</span></a><span class="sep">/</span><a href="/haze-demo/en/subsidies-and-projects/" hreflang="en" lang="en" title="Englisch"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false"><rect width="30" height="20" fill="#012169"></rect><path d="M0 0 30 20M30 0 0 20" stroke="#ffffff" stroke-width="4"></path><path d="M0 0 30 20M30 0 0 20" stroke="#c8102e" stroke-width="2"></path><path d="M15 0V20M0 10H30" stroke="#ffffff" stroke-width="6.5"></path><path d="M15 0V20M0 10H30" stroke="#c8102e" stroke-width="4"></path></svg><span class="lang-code">EN</span></a><span class="sep">/</span><a href="/haze-demo/de/foerderungen-und-projekte/" hreflang="de" lang="de" title="Deutsch" aria-current="true"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false"><rect width="30" height="6.67" fill="#000000"></rect><rect y="6.67" width="30" height="6.67" fill="#dd0000"></rect><rect y="13.34" width="30" height="6.66" fill="#ffce00"></rect></svg><span class="lang-code">DE</span></a></div><button class="nav-toggle" id="navToggle" type="button" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav">
+      <ul class="nav-links">
+      <li><a href="/haze-demo/de/ueber-uns/">Über uns</a></li>
+      <li class="has-dropdown">
+        <a href="/haze-demo/de/produkte/">Produkte <span class="caret" aria-hidden="true">▾</span></a>
+        <div class="dropdown"><a href="/haze-demo/de/produkte/rolltore/">Rolltore</a> <a href="/haze-demo/de/produkte/seitenlueftungssysteme/">Seitenlüftungssysteme</a> <a href="/haze-demo/de/produkte/firstlueftungssysteme/">Firstlüftungssysteme</a> <a href="/haze-demo/de/produkte/tore-und-einfahrten/">Weitere Tore</a> <a href="/haze-demo/de/produkte/wetterstationen/">Wetterstation</a> <a href="/haze-demo/de/produkte/guellebehaelter-abdeckungen/">Güllebehälterabdeckungen</a> <a href="/haze-demo/de/produkte/schutzgitter/">Schutzgitter</a> <a href="/haze-demo/de/produkte/laermschutzwaende/">Lärmschutzwände</a> <a href="/haze-demo/de/produkte/netze/">Netze</a> <a href="/haze-demo/de/produkte/" class="dropdown-all">Alle Produkte →</a></div>
+      </li>
+      <li><a href="/haze-demo/de/unsere-projekte/">Unsere Projekte</a></li>
+      <li><a href="/haze-demo/de/karriere/">Karriere</a></li>
+      <li><a href="/haze-demo/de/aktuelles/">Aktuelles</a></li>
+      <li><a href="/haze-demo/de/kontakt/">Kontakt</a></li>
+      </ul>
+      <a href="/haze-demo/de/kontakt/" class="nav-cta">Unverbindliche Beratung</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="subhero">
+  <div class="wrap">
+    <div class="crumbs"><a href="/haze-demo/de/">Startseite</a><span>›</span>Fördermittel und Projekte</div>
+    <h1>Projekte <em>mit Förderung.</em></h1>
+    <p class="lead">HAZE s.r.o. führt Projekte mit Unterstützung der Europäischen Union und des Staatshaushalts der Tschechischen Republik durch. Nachfolgend finden Sie eine Übersicht laufender und abgeschlossener Projekte, ihre Registriernummern und Beschreibungen.</p>
+  </div>
+</section>
+
+<section style="background:var(--paper-2);padding:88px 0">
+  <div class="wrap">
+    <div class="eu-grid">
+
+      <!-- PROJEKT 1: FVE -->
+      <article class="eu-project">
+        <div class="eu-project-emblems">
+          <span class="eu-lockup"><img src="/haze-demo/assets/eu/eu-flag.svg" alt="Europäische Union" width="60" height="40" decoding="async"><span class="eu-cap"><strong>Finanziert von der Europäischen Union</strong>NextGenerationEU</span></span>
+        </div>
+        <h2>Photovoltaikanlage ohne Speicher <em>HAZE, s.r.o.</em></h2>
+        <dl>
+          <dt>Registriernummer</dt>
+          <dd><code>CZ.31.3.0/0.0/0.0/22_001/0005948</code></dd>
+        </dl>
+        <p><strong>Projektbeschreibung:</strong> Gegenstand des Projekts ist die Errichtung einer Photovoltaikanlage mit einer installierten Leistung von 98,4 kWp, ohne Speicher, auf dem Objekt (Parzellen-Nr. st. 101, Katastergebiet 76180) auf dem Betriebsgelände der Firma HAZE, s.r.o. in der Gemeinde Křičeň, Region Pardubice.</p>
+        <p><strong>Projektziele:</strong> Durch das Projekt werden mithilfe erneuerbarer Energiequellen die Emissionen von Schadstoffen gesenkt und darüber hinaus die Betriebskosten des Unternehmens verringert.</p>
+        <p class="funding-line">Das Projekt wird aus Mitteln der Europäischen Union kofinanziert - Errichtung neuer Photovoltaikquellen; 2.3 Umstieg auf saubere Energiequellen.</p>
+      </article>
+
+      <!-- PROJEKT 2: Digitalizace -->
+      <article class="eu-project">
+        <div class="eu-project-emblems">
+          <span class="eu-lockup"><img src="/haze-demo/assets/eu/eu-flag.svg" alt="Europäische Union" width="60" height="40" decoding="async"><span class="eu-cap"><strong>Europäische Union</strong>Europäischer Fonds für regionale Entwicklung</span></span>
+          <span class="mpo-lockup"><img src="/haze-demo/assets/eu/mpo-mark.svg" alt="Ministerium für Industrie und Handel" width="40" height="40" decoding="async"><span class="mpo-cap">Ministerium für Industrie und Handel</span></span>
+        </div>
+        <h2>Digitalisierung und Automatisierung der Fertigung <em>bei HAZE, s. r. o.</em></h2>
+        <p>Unser Unternehmen führt das Projekt <strong>„Digitalisierung und Automatisierung der Fertigung bei HAZE, s. r. o.“</strong> durch, das aus dem Operationellen Programm Unternehmen und Innovationen für Wettbewerbsfähigkeit, also aus Mitteln der Europäischen Union und des Staatshaushalts der Tschechischen Republik, kofinanziert wird. Dieses Projekt wurde mit finanzieller Unterstützung aus Mitteln des Staatshaushalts über das Ministerium für Industrie und Handel durchgeführt.</p>
+        <p><strong>Hauptziel</strong> des Projekts ist die Erweiterung der bestehenden Vernetzung der Technologien um weitere Maschinen, Bereiche und Nutzungsarten, die bisher nicht vollständig digitalisiert und in die Datenerfassung eingebunden waren. Ergebnis des Projekts ist die Vertiefung der bidirektionalen Kommunikation zwischen den einzelnen Elementen.</p>
+      </article>
+
+      <!-- PROJEKT 3: Výstavba areálu -->
+      <article class="eu-project">
+        <div class="eu-project-emblems">
+          <span class="eu-lockup"><img src="/haze-demo/assets/eu/eu-flag.svg" alt="Europäische Union" width="60" height="40" decoding="async"><span class="eu-cap"><strong>Europäische Union</strong>Europäischer Fonds für regionale Entwicklung</span></span>
+          <span class="mpo-lockup"><img src="/haze-demo/assets/eu/mpo-mark.svg" alt="Ministerium für Industrie und Handel" width="40" height="40" decoding="async"><span class="mpo-cap">Ministerium für Industrie und Handel</span></span>
+        </div>
+        <h2>Bau des Betriebsgeländes <em>der Firma HAZE, s. r. o.</em></h2>
+        <p>Unser Unternehmen führt das Projekt <strong>„Bau des Betriebsgeländes der Firma HAZE, s. r. o.“</strong> durch, das aus dem Operationellen Programm Unternehmen und Innovationen für Wettbewerbsfähigkeit, also aus Mitteln der Europäischen Union und des Staatshaushalts der Tschechischen Republik, kofinanziert wird.</p>
+        <p><strong>Ziel des Projekts</strong> ist die Zusammenführung der Fertigungs-, Lager- und Verwaltungsflächen der Firma HAZE, s. r. o. an einem Ort. Durch das neue Betriebsgelände verbessern sich die Räumlichkeiten für die Mitarbeiter; das neue Gelände wird zudem die Marktstellung des Unternehmens besser abbilden und stärken, wodurch auch die Wettbewerbsfähigkeit des Unternehmens steigt.</p>
+      </article>
+
+      <!-- PROJEKT 4: B2B konfigurator (The Country for the Future, MPO)
+           Znění publicity je závazné - viz clients/haze/inbox/2026-08-13/grantex_cff/.
+           Projekt je čistě národní (státní rozpočet přes MPO), NE z fondů EU. -->
+      <article class="eu-project">
+        <div class="eu-project-emblems">
+          <span class="mpo-lockup"><img src="/haze-demo/assets/eu/mpo-mark.svg" alt="Ministerium für Industrie und Handel" width="40" height="40" decoding="async"><span class="mpo-cap">Ministerium für Industrie und Handel</span></span>
+          <span class="tcf-lockup"><img src="/haze-demo/assets/eu/tcf-logo.png" alt="Czech Republic - The Country For The Future" width="110" height="40" decoding="async"></span>
+        </div>
+        <h2>B2B-Produktkonfigurator <em>der Firma HAZE</em></h2>
+        <dl>
+          <dt>Evidenznummer</dt>
+          <dd><code>FX05030153_7929</code></dd>
+          <dt>Empfänger</dt>
+          <dd>HAZE s.r.o.</dd>
+        </dl>
+        <p><strong>Projektbeschreibung:</strong> Das Projektvorhaben ermöglicht es der Firma HAZE, s.r.o., das Leistungsvolumen deutlich zu steigern, vor allem im Ausland, und zwar dank der Automatisierung der Angebots-, Preisbildungs- und Bestellprozesse mittels eines Produktkonfigurators.</p>
+        <p class="funding-line">Das Projekt wurde mit finanzieller Unterstützung aus Mitteln des Staatshaushalts über das Ministerium für Industrie und Handel im Programm The Country for the Future durchgeführt.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="/haze-demo/assets/logo-white.svg" alt="HAZE" class="logo-img" width="100" height="46" decoding="async">
+        </div>
+        <p>Wir fertigen und montieren Tore, Seitenlüftung, Lärmschutzwände und Zubehör für den modernen Stall und für die Industrie. Seit 2007, eigene Halle in Křičeň, ausgeführte Projekte in Tschechien, der Slowakei und im Ausland.</p>
+      </div>
+      <div>
+        <h5>Produkte</h5>
+        <ul>
+          <li><a href="/haze-demo/de/produkte/rolltore/">Rolltore</a></li>
+          <li><a href="/haze-demo/de/produkte/seitenlueftungssysteme/">Seitenlüftungssysteme</a></li>
+          <li><a href="/haze-demo/de/produkte/firstlueftungssysteme/">Firstlüftungssysteme</a></li>
+          <li><a href="/haze-demo/de/produkte/tore-und-einfahrten/">Weitere Tore</a></li>
+          <li><a href="/haze-demo/de/produkte/wetterstationen/">Wetterstation</a></li>
+          <li><a href="/haze-demo/de/produkte/guellebehaelter-abdeckungen/">Güllebehälterabdeckungen</a></li>
+          <li><a href="/haze-demo/de/produkte/schutzgitter/">Schutzgitter</a></li>
+          <li><a href="/haze-demo/de/produkte/laermschutzwaende/">Lärmschutzwände</a></li>
+          <li><a href="/haze-demo/de/produkte/netze/">Netze</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Website</h5>
+      <ul>
+        <li><a href="/haze-demo/de/">Startseite</a></li>
+        <li><a href="/haze-demo/de/produkte/">Produkte</a></li>
+        <li><a href="/haze-demo/de/unsere-projekte/">Unsere Projekte</a></li>
+        <li><a href="/haze-demo/de/ueber-uns/">Über uns</a></li>
+        <li><a href="/haze-demo/de/karriere/">Karriere</a></li>
+        <li><a href="/haze-demo/de/aktuelles/">Aktuelles</a></li>
+        <li><a href="/haze-demo/de/kontakt/">Kontakt</a></li>
+        <li><a href="/haze-demo/de/foerderungen-und-projekte/">Fördermittel und Projekte</a></li>
+      </ul>
+      </div>
+      <div>
+        <h5>Kontakt</h5>
+      <ul>
+        <li><a href="tel:+420602488989">+420 602 488 989</a></li>
+        <li><a href="mailto:info@haze.cz">info@haze.cz</a></li>
+        <li>Büro und Geschäftsleitung: Praskačka 145, 503 33</li>
+        <li>Produktionshalle: Křičeň 108, 533 41</li>
+        <li>HAZE, s.r.o. | IČ 275 09 800</li>
+      </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2007-2026 HAZE, s.r.o. Alle Rechte vorbehalten.</div>
+      <div>Das Unternehmen ist im Handelsregister des Stadtgerichts Prag eingetragen, Abteilung C, Einlage 164457</div>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-bar"><a href="tel:+420602488989">Anrufen</a> <a href="/haze-demo/de/kontakt/">Anfrage</a></div>
+
+<div class="cookies" id="cookies">
+  <p><strong style="color:#fff">Cookies und Analyse</strong><br>Wir verwenden Analyse-Cookies (Google Analytics, Google Ads) zur Messung der Besucherzahlen. Ohne Ihre Einwilligung speichern wir nichts außer den notwendigen Dateien.</p>
+  <div class="cookies-btns"><button class="cookies-btn-decline" onclick="cookieChoice(false)">Nur notwendige</button> <button class="cookies-btn-accept" onclick="cookieChoice(true)">Ich stimme zu</button></div>
+</div>
+
+<script src="/haze-demo/assets/scripts.js?v=20260827"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+# Demo verze webu HAZE. Ostry web: https://www.haze.cz/
