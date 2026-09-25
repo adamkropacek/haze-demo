@@ -40,7 +40,7 @@
     'svinovaci-vrata': 'Wickeltore',
     'zastreseni-jimek': 'Güllebehälterabdeckungen',
     'pletiva-doplnky': 'Geflechte und Zubehör',
-    'protihlukove-steny': 'Lärmschutzwände',
+    'protihlukove-steny': 'Planen-Trennwände',
   };
 
   let map;

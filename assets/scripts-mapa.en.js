@@ -40,7 +40,7 @@
     'svinovaci-vrata': 'Roll-up gates',
     'zastreseni-jimek': 'Slurry tank roofing',
     'pletiva-doplnky': 'Mesh and accessories',
-    'protihlukove-steny': 'Noise barriers',
+    'protihlukove-steny': 'Curtain partition walls',
   };
 
   let map;

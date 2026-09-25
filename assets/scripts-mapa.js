@@ -40,7 +40,7 @@
     'svinovaci-vrata': 'Svinovací vrata',
     'zastreseni-jimek': 'Zastřešení jímek',
     'pletiva-doplnky': 'Pletiva a doplňky',
-    'protihlukove-steny': 'Protihlukové stěny',
+    'protihlukove-steny': 'Plachtové dělicí stěny',
   };
 
   let map;
